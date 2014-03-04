@@ -10,7 +10,7 @@ import javax.swing.Timer;
 
 /**
  * Relógio
- * 
+ *
  * @author tulio.xcrtf
  * @version 1.0
  */
@@ -26,7 +26,7 @@ public class Relogio extends JFrame {
         super.setSize(270, 70);
         super.setLocationRelativeTo(null);
         super.setLayout(new FlowLayout());
-        
+
         this.horario = new JLabel();
         super.add(horario);
         super.setVisible(true);
@@ -37,25 +37,21 @@ public class Relogio extends JFrame {
     ActionListener init = (new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
-            Calendar calendario = Calendar.getInstance();
-            showTime(calendario.get(Calendar.HOUR_OF_DAY),
-                    calendario.get(Calendar.MINUTE), calendario.get(Calendar.SECOND));
+            showTime();
         }
     });
 
     /**
      * Método de exibição do horário.
-     * 
-     * @param h int -> Hora
-     * @param m int -> Minuto
-     * @param s int -> Segundo
      */
-    private void showTime(int h, int m, int s) {
-        horario.setText(h + ":" + m + ":" + s);
+    private void showTime() {
+        Calendar calendario = Calendar.getInstance();
+        horario.setText(calendario.get(Calendar.HOUR_OF_DAY) + ":" + calendario.get(Calendar.MINUTE) + ":" + calendario.get(Calendar.SECOND));
     }
 
     /**
      * Main
+     *
      * @param args String[]
      */
     public static void main(String[] args) {
