@@ -21,7 +21,7 @@ public class Fatorial {
 
     /* Método recursivo do Fatorial */
     public static long calcular(long probs) {
-        long result, c = probs - 1;
+        long c = probs - 1l;
             if (probs <= 1) {
                 return 1;
             } else {
