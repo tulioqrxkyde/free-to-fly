@@ -7,7 +7,7 @@
  * Remark --> if want, modify the value of n to exhibit more times.
  *
  ************************************************************************/
-package javaprogramming;
+package freetofly;
 
 /**
  *
