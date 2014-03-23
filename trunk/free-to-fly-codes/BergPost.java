@@ -21,17 +21,17 @@ public class BergPost {
     private static final String name = "Berg";
 
     public static void main(String[] args) {
-        ligarTv();
+        turnOnTv();
     }
 
-    public static void ligarTv() {
-        boolean loop = true, sleep = !loop, tired = !sleep, juizo = !tired;
-        mudarCanal(loop);
+    public static void turnOnTv() {
+        boolean loop = true, sleep = !loop, tired = !sleep, senses = !tired;
+        changeChannel(loop);
     }
 
-    public static void mudarCanal(final boolean loop) {
+    public static void changeChannel(final boolean loop) {
         boolean funny = false;
-        for (int canal = 1; loop; canal++) {
+        for (int channel = 1; loop; channel++) {
             if (funny) {
                 break;
             } else {
