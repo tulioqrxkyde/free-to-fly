@@ -1,4 +1,11 @@
-package javaprogramming.jogos;
+/***********************************************************************
+ * Compilation: javac Fatorial.java
+ * Execution: java Fatorial or java -cp . Fatorial
+ *
+ * Mini-Game Naval Battle.
+ *
+ ***********************************************************************/
+package freetofly;
 
 import java.util.Random;
 import java.util.Scanner;
