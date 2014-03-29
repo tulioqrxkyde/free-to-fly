@@ -17,11 +17,11 @@ import javax.swing.Timer;
  * Relógio
  *
  * @author tulio.xcrtf
- * @version 1.0
+ * @version 1.1
  */
 public class Relogio extends JFrame {
 
-    JLabel horario;
+    JLabel horario, data;
 
     /**
      * Construtor default - define os componentes e inicializa o frame.
@@ -33,7 +33,9 @@ public class Relogio extends JFrame {
         super.setLayout(new FlowLayout());
 
         this.horario = new JLabel();
+        this.data = new JLabel();
         super.add(horario);
+        super.add(data);
         super.setVisible(true);
 
         Timer time = new Timer(1000, init);
@@ -47,10 +49,12 @@ public class Relogio extends JFrame {
     });
 
     /**
-     * Método de exibição do horário.
+     * Método de exibição do horário & data.
      */
     private void showTime() {
         Calendar calendario = Calendar.getInstance();
+        data.setText(calendario.get(Calendar.DAY_OF_MONTH)+"/"
+                +Integer.valueOf(calendario.get(Calendar.MONTH)+1)+"/"+calendario.get(Calendar.YEAR)); /* Especialmente para seu comentário, Johnatan */
         horario.setText(calendario.get(Calendar.HOUR_OF_DAY) + ":" + calendario.get(Calendar.MINUTE) + ":" + calendario.get(Calendar.SECOND));
     }
 
