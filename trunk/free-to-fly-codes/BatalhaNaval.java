@@ -19,11 +19,11 @@ import java.util.Scanner;
 public class BatalhaNaval {
 
     static final int[][] BLOCOS = new int[5][5]; /* Informe o length que desejar */
-    static String[][] mar = new String[blocos[0].length][blocos[1].length];
+    static String[][] mar = new String[BLOCOS[0].length][BLOCOS[1].length];
     static int navios = 0, tiros = 0;
 
     public static void main(String[] args) {
-        /* Preenche os blocos e a array que contem as aguinhas *-* */
+        /* Preenche os BLOCOS e a array que contem as aguinhas *-* */
         for (int i = 0; i < BLOCOS[0].length; i++) {
             for (int j = 0; j < BLOCOS[0].length; j++) {
                 BLOCOS[j][i] = -1;
