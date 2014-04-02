@@ -22,7 +22,7 @@ import java.util.Random;
 public class AdInfinitumRandomArrays {
 
     /* Tamanho máximo do length que um vetor poderá atingir */
-    static final int arraySize = 10;
+    static final int ARRAY_SIZE = 10;
     /* Valor numérico que poderá ser gerado,
      * ex: 1000 [ Irá fazer com que haja a possibilidade de gerar números entre 0-999 ].
      */
@@ -32,8 +32,8 @@ public class AdInfinitumRandomArrays {
         Random randomLength = new Random();
         boolean identical = false;
         while (!identical) {
-            identical = isIdentical(randNumbers(randomLength.nextInt(arraySize)),
-                    randNumbers(randomLength.nextInt(arraySize)));
+            identical = isIdentical(randNumbers(randomLength.nextInt(ARRAY_SIZE)),
+                    randNumbers(randomLength.nextInt(ARRAY_SIZE)));
         }
         System.out.println("Identical Arrays o(^_^)o ");
     }
