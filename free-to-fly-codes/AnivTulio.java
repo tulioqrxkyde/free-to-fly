@@ -7,12 +7,12 @@ public class AnivTulio {
 
     public static void main(String[] args) {
        
-        JOptionPane.showMessageDialog(null,"Que a felicidade Adote seu coraÃ§Ã£o. ");
+        JOptionPane.showMessageDialog(null,"Que a felicidade Adote seu coração. ");
         JOptionPane.showMessageDialog(null,"Que o carinho resida em seu caminho.");
         JOptionPane.showMessageDialog(null,"Que os amigos leais se multiplique.");
-        JOptionPane.showMessageDialog(null,"E que a paz se faÃ§a presente!");
-        JOptionPane.showMessageDialog(null,"ParabÃ©ns");
-        JOptionPane.showMessageDialog(null,"Feliz AniversÃ¡rio");
+        JOptionPane.showMessageDialog(null,"E que a paz se faça presente!");
+        JOptionPane.showMessageDialog(null,"Parabéns");
+        JOptionPane.showMessageDialog(null,"Feliz Aniversário");
         
         boolean Tulio=true;     
         
@@ -24,8 +24,8 @@ public class AnivTulio {
             sucesso++;
             felicidades++;
             resumindoTudodeBom++;
-            JOptionPane.showMessageDialog(null,"Este sÃ£o os Sinceros votos de Sucesso, Felicidade e Tudo de Bom para VocÃª: TÃºlio Vidal");
+            JOptionPane.showMessageDialog(null,"Este são os Sinceros votos de Sucesso, Felicidade e Tudo de Bom para Você: Túlio Vidal");
         }while (Tulio);
-        //NÃ£o Ã© preciso procurar Bugs neste cÃ³digo, eles te acham! Loop Infinito.    
+        //Não é preciso procurar Bugs neste código, eles te acham! Loop Infinito.    
     }
 }

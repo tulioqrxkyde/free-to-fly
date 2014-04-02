@@ -18,26 +18,26 @@ import java.util.Scanner;
  */
 public class BatalhaNaval {
 
-    static final int[][] blocos = new int[5][5]; /* Informe o length que desejar */
+    static final int[][] BLOCOS = new int[5][5]; /* Informe o length que desejar */
     static String[][] mar = new String[blocos[0].length][blocos[1].length];
     static int navios = 0, tiros = 0;
 
     public static void main(String[] args) {
         /* Preenche os blocos e a array que contem as aguinhas *-* */
-        for (int i = 0; i < blocos[0].length; i++) {
-            for (int j = 0; j < blocos[0].length; j++) {
-                blocos[j][i] = -1;
+        for (int i = 0; i < BLOCOS[0].length; i++) {
+            for (int j = 0; j < BLOCOS[0].length; j++) {
+                BLOCOS[j][i] = -1;
                 mar[j][i] = "~";
             }
         }
         Random rand = new Random();
         int rand1, rand2;
         for (int set = 0; set < 3;) {
-            /* Gera a posiÃ§Ã£o dos barcos */
-            rand1 = rand.nextInt(blocos[0].length);
-            rand2 = rand.nextInt(blocos[0].length);
-            if (blocos[rand1][rand2] != 1) {
-                blocos[rand1][rand2] = 1;
+            /* Gera a posição dos barcos */
+            rand1 = rand.nextInt(BLOCOS[0].length);
+            rand2 = rand.nextInt(BLOCOS[0].length);
+            if (BLOCOS[rand1][rand2] != 1) {
+                BLOCOS[rand1][rand2] = 1;
                 set++;
             }
         }
@@ -45,7 +45,7 @@ public class BatalhaNaval {
     }
 
     /**
-     * MÃ©todo que permite "atirar", caso acerte a Ã¡guinha se tornarÃ¡ um X, caso erre se tornarÃ¡
+     * Método que permite "atirar", caso acerte a águinha se tornará um X, caso erre se tornará
      * um asterisco *
      */
     public static void atirar() {
@@ -64,16 +64,16 @@ public class BatalhaNaval {
                 System.out.println("Os valores devem estar entre 0 - 4.");
                 continue;
             }
-            if (blocos[n2][n] == 0) {
-                System.out.println("VocÃª jÃ¡ atirou aqui!");
-            } else if (blocos[n2][n] == 1) {
+            if (BLOCOS[n2][n] == 0) {
+                System.out.println("Você já atirou aqui!");
+            } else if (BLOCOS[n2][n] == 1) {
                 navios++;
                 mar[n2][n] = "X";
             } else {
-                blocos[n2][n] = 0;
+                BLOCOS[n2][n] = 0;
                 mar[n2][n] = "*";
             }
         }
-        System.out.println("VocÃª conseguiu atingir todos os navios na tentativa " + tiros);
+        System.out.println("Você conseguiu atingir todos os navios na tentativa " + tiros);
     }
 }

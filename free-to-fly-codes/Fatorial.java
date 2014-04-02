@@ -18,7 +18,7 @@ public class Fatorial {
             + calcular(Long.valueOf(System.console().printf("Informe o valor: ", new Object[1]).readLine())));
     }
 
-    /* MÃ©todo recursivo do Fatorial */
+    /* Método recursivo do Fatorial */
     public static long calcular(long probs) {
         long c = probs - 1l;
             if (probs <= 1) {

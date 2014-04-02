@@ -4,9 +4,9 @@
  *
  * Code for post of Teacher Berg, in date 22/03/2014 - 23H(+-).
  * 
- * Berg Words: To no loop: Sem sono, cansado, sem ju√≠zo.. 
- * Da√≠, tento assistir tV pra tentar rir.. procuro procuro procuro, 
- * e n√£o acho nada na Rede Aberta que, de fato, contribua para algo 
+ * Berg Words: To no loop: Sem sono, cansado, sem juÌzo.. 
+ * DaÌ, tento assistir tV pra tentar rir.. procuro procuro procuro, 
+ * e n„o acho nada na Rede Aberta que, de fato, contribua para algo 
  * essa hora...
  *
  ***********************************************************************/
@@ -18,7 +18,7 @@ package freetofly;
  */
 public class BergPost {
 
-    private static final String name = "Berg";
+    private static final String NAME = "Berg";
 
     public static void main(String[] args) {
         turnOnTv();
@@ -35,10 +35,10 @@ public class BergPost {
             if (funny) {
                 break;
             } else {
-                System.out.println("Canal n√£o divertido.");
+                System.out.println("Canal n„o divertido.");
             }
         }
         System.out.println("Canal divertido !!!! ^_^"
-                + " Canal contribuiu com o " + name);
+                + " Canal contribuiu com o " + NAME);
     }
 }

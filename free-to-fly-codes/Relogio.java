@@ -14,7 +14,7 @@ import javax.swing.JLabel;
 import javax.swing.Timer;
 
 /**
- * Rel√≥gio
+ * RelÛgio
  *
  * @author tulio.xcrtf
  * @version 1.1
@@ -27,7 +27,7 @@ public class Relogio extends JFrame {
      * Construtor default - define os componentes e inicializa o frame.
      */
     Relogio() {
-        super("Meu rel√≥gio");
+        super("Meu relÛgio");
         super.setSize(270, 70);
         super.setLocationRelativeTo(null);
         super.setLayout(new FlowLayout());
@@ -49,12 +49,12 @@ public class Relogio extends JFrame {
     });
 
     /**
-     * M√©todo de exibi√ß√£o do hor√°rio & data.
+     * MÈtodo de exibiÁ„o do hor·rio & data.
      */
     private void showTime() {
         Calendar calendario = Calendar.getInstance();
         data.setText(calendario.get(Calendar.DAY_OF_MONTH)+"/"
-                +Integer.valueOf(calendario.get(Calendar.MONTH)+1)+"/"+calendario.get(Calendar.YEAR)); /* Especialmente para seu coment√°rio, Johnatan */
+                +Integer.valueOf(calendario.get(Calendar.MONTH)+1)+"/"+calendario.get(Calendar.YEAR)); /* Especialmente para seu coment·rio, Johnatan */
         horario.setText(calendario.get(Calendar.HOUR_OF_DAY) + ":" + calendario.get(Calendar.MINUTE) + ":" + calendario.get(Calendar.SECOND));
     }
 
