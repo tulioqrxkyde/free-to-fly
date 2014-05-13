@@ -1,18 +1,14 @@
 /***********************************************************************
- * Compilation: javac HorsePower.java
- * Execution: java HorsePower or java -cp . HorsePower
- * 
- * Remark: This code is based on the study about the unit of measure: Horse-power ( HP ) by James Watt.
+ * Nota: Este código é baseado no estudo sobre a unidade de medida: ( HP ) by James Watt.
  * EN-US: (http://en.wikipedia.org/wiki/Horsepower).
  ***********************************************************************/
-package javaprogramming;
+package freetofly;
 
 import java.util.Arrays;
 
 /**
  *
  * @author tulio.xcrtf
- * @version v1.0
  */
 public class HorsePower {
 
